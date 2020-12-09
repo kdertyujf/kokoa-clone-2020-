@@ -1,8 +1,9 @@
 .nav {
     position: fixed;
+    z-index: 1;
     bottom: 0;
     width:100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: gray;
     padding: 20px 40px;  
     /* box에 padding을 추가하면 css는 박스 전체크기를 늘린다.
     box--sizing: border-box는 크기는 유지한채 안으로 padding을 만들도록 해준다. */
