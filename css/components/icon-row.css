@@ -14,6 +14,7 @@
 
 .icon-row__icon span{
     display: block;
+    text-align: center;
 }
 
 .icon-row__icon i{
