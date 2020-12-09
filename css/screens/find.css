@@ -1,0 +1,134 @@
+.find-dot {
+    position: absolute;
+    right:20px;
+    top: 55px;
+} 
+
+
+
+.recommended-friends {
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+    margin: 25px 0px;
+    padding: 25px 0px;
+}
+
+.recommended-friends__title {
+    font-size:12px;
+    color: rgba(0,0,0,0.4);
+}
+
+.recommended-friends span{
+    display: block;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0,0,0,0.4);
+    font-size:15px;
+}
+
+.open-post {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.open-chat__header{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6;
+    font-size:12px;
+    margin-bottom: 20px;
+}
+
+.open-post{
+    display: flex;
+    justify-content: space-between;
+}
+
+.open-post:nth-child(2){
+    border-bottom: var(--main-border);
+}
+.open-post__title{
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.open-post__hashtag{
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.open-post__members {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.open-post__members img{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.open-post__members-count{
+    opacity: 0.5;
+    font-size: 14px;
+}
+.open-post__members .divider{
+    width:2px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.open-post__member-status {
+    color: red;
+    font-size: 14px;
+}
+.open-post__photo {
+    position: relative;
+}
+
+.open-post__photo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+
+}
+
+.open-post__heart-count{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    border-radius:20%;
+    padding: 5px;
+    display: flex;
+    align-items:center;
+    position: absolute;
+    top:52px;
+    left: 30px;
+    font-size:12px;
+}
+
+@keyframes heartBeat {
+    0%{
+        color:white;
+    }
+    50%{
+        color:tomato;
+        transform: scale(3);
+    }
+    100%{
+        font-size: white;
+    }
+}
+
+.open-post__heart-count:hover i{
+    will-change: transform;
+    animation: heartBeat 1s linear infinite; 
+}
+
+.open-post__heart-count span{
+    margin-left: 3px;
+}

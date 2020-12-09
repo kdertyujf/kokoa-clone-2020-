@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatting room - Kokoa clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="chat-room__body" id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="screen-header2 chatting-room__header">
+      <div class="screen-header2__column">
+        <a href="chats.html"><i class="fas fa-chevron-left fa-lg"></i></a>
+      </div>
+      <div class="screen-header2__column">
+        <h1 class="screen-header2__title">Kakao talk</h1>
+      </div>
+      <div class="screen-header2__column">
+        <a href="chats.html">
+          <i class="fas fa-search fa-lg"></i>
+        </a>
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat-room__timer">
+        <span class="chat-room__timer-text">Tuesday, June 30, 2020</span>
+      </div>
+      <div class="chat-room__chatting">
+        <div class="chat-room__chatting-message">
+          <div class="chatting-message__column chatting-message__yours">
+            <img
+              src="screenshots\kakao-image.jpg"
+              class="chatting-message__image"
+            />
+            <div class="chatting-message__text">
+              <div class="chatting-message__title">
+                <span>Kakao Talk</span>
+              </div>
+              <div class="chatting-message__talk-time">
+                <div class="chatting-message__talk">
+                  <div class="chatting-message__talk-box talk-box__yours">
+                    Hi!
+                  </div>
+                </div>
+                <div class="chatting-message__time">
+                  <span>21:27</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-room__chatting-message">
+          <div class="chatting-message__column chatting-message__mine">
+            <div class="chatting-message__text">
+              <div class="chatting-message__talk-time">
+                <div class="chatting-message__talk">
+                  <div class="chatting-message__talk-box talk-box__mine">
+                    zzz
+                  </div>
+                </div>
+                <div class="chatting-message__time">
+                  <span>21:27</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="chat-room__input-keyboard">
+      <form class="chat-room__input">
+        <div class="chat-room__input__plus">
+          <i class="far fa-plus-square fa-2x"></i>
+        </div>
+        <div class="chat-room__input__box">
+          <input
+            type="text"
+            class="chat-room__input__box-text"
+            placeholder="Hi!"
+          />
+          <div class="chat-room__input__box-icon">
+            <div class="chat-room__input__box-icon__smile">
+              <i class="far fa-smile"></i>
+            </div>
+            <button>
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="chat-room__keyboard">
+        <div class="chat-room__keyboard__line">
+          <div class="keyboard-alphabet">q</div>
+          <div class="keyboard-alphabet">w</div>
+          <div class="keyboard-alphabet">e</div>
+          <div class="keyboard-alphabet">r</div>
+          <div class="keyboard-alphabet">t</div>
+          <div class="keyboard-alphabet">y</div>
+          <div class="keyboard-alphabet">u</div>
+          <div class="keyboard-alphabet">i</div>
+          <div class="keyboard-alphabet">o</div>
+          <div class="keyboard-alphabet">p</div>
+        </div>
+        <div class="chat-room__keyboard__line">
+          <div class="keyboard-alphabet">a</div>
+          <div class="keyboard-alphabet">s</div>
+          <div class="keyboard-alphabet">d</div>
+          <div class="keyboard-alphabet">f</div>
+          <div class="keyboard-alphabet">g</div>
+          <div class="keyboard-alphabet">h</div>
+          <div class="keyboard-alphabet">j</div>
+          <div class="keyboard-alphabet">k</div>
+          <div class="keyboard-alphabet">l</div>
+        </div>
+        <div class="chat-room__keyboard__line third-line">
+          <div class="keyboard-icon"><i class="fas fa-arrow-up"></i></div>
+          <div class="keyboard-alphabet">z</div>
+          <div class="keyboard-alphabet">x</div>
+          <div class="keyboard-alphabet">c</div>
+          <div class="keyboard-alphabet">v</div>
+          <div class="keyboard-alphabet">b</div>
+          <div class="keyboard-alphabet">n</div>
+          <div class="keyboard-alphabet">m</div>
+          <div class="keyboard-icon"><i class="fas fa-backspace"></i></div>
+        </div>
+        <div class="chat-room__keyboard__line">
+          <div class="keyboard-icon">123</div>
+          <div class="keyboard-icon"><i class="fas fa-globe"></i></div>
+          <div class="keyboard-alphabet"><i class="fas fa-microphone"></i></div>
+          <div class="keyboard-space">space</div>
+          <div class="keyboard-return">return</div>
+        </div>
+      </div>
+    </div>
+    <div id="no-mobile">
+      <span>Your screen is to big</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
